@@ -1,7 +1,7 @@
 <template>
     <div class="padding">
         <div class="left">
-            <img src="../img/dc-logo.png" alt="Logo">
+            <img src="../assets/dc-logo.png" alt="Logo">
         </div>
         <div class="right">
             <ul>
