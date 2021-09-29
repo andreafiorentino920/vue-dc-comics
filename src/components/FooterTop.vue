@@ -1,27 +1,31 @@
 <template>
-    <div class="padding">
-        <div class="col-left">
-            <p>DC COMICS</p>
-            <ul>
-                <li v-for="(link,index) in menu1" :key="index"><a href="">{{link.text}}</a></li>
-            </ul>
-            <p>SHOP</p>
-            <ul>
-                <li v-for="(link,index) in menu2" :key="index"><a href="">{{link.text}}</a></li>
-            </ul>
+    <div class="container">
+        <div class="left-bar padding">
+            <div class="col-left">
+                <p>DC COMICS</p>
+                <ul>
+                    <li v-for="(link,index) in menu1" :key="index"><a href="">{{link.text}}</a></li>
+                </ul>
+                <p>SHOP</p>
+                <ul>
+                    <li v-for="(link,index) in menu2" :key="index"><a href="">{{link.text}}</a></li>
+                </ul>
+            </div>
+            <div class="col-center">
+                <p>DC</p>
+                <ul>
+                    <li v-for="(link,index) in menu3" :key="index"><a href="">{{link.text}}</a></li>
+                </ul>
+                
+            </div>
+            <div class="col-right">
+                <p>SITES</p>
+                <ul>
+                    <li v-for="(link,index) in menu4" :key="index"><a href="">{{link.text}}</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-center">
-            <p>DC</p>
-            <ul>
-                <li v-for="(link,index) in menu3" :key="index"><a href="">{{link.text}}</a></li>
-            </ul>
-            
-        </div>
-        <div class="col-right">
-            <p>SITES</p>
-            <ul>
-                <li v-for="(link,index) in menu4" :key="index"><a href="">{{link.text}}</a></li>
-            </ul>
+        <div class="right-bar">
         </div>
     </div>
 </template>
@@ -168,32 +172,44 @@
     }
 </script>
 <style lang="scss" scoped>
-        div{
+    .container{
+        display: flex;
+        flex-direction: row;
+        background-image: url(../assets/footer-bg.jpg);
+        background-size: cover;
+
+        .left-bar{
             display: flex;
             flex-direction: row;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            background-image: url(../assets/footer-bg.jpg);
-            background-size: cover;
-
+            padding-top: 25px;
+            
             .col-left, .col-right, .col-center{
                 display: flex;
                 flex-direction: column;
             }
             p{
                 color: white;
-                font-size: 15px;
+                font-size: 20px;
+                margin: 15px 0 15px 0;
             }
             ul{
                 padding-right: 30px;
                 list-style: none;
+
+                li{
+                    margin-bottom: 10px;
+                }
             }
             a{
                 text-decoration: none;
                 color: #69687a;
             }
-            div{
-                margin-right:30px ;
-            }
         }
+        .right-bar{
+            width: 100%;
+            background-image: url(../assets/dc-logo-bg.png);
+            background-size: cover;
+            background-position: center;
+        }
+    }
 </style>

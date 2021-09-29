@@ -16,23 +16,23 @@
                     images:[
                         {
                             name:"DIGITAL COMICS",
-                            src:"../assets/buy-comics-digital-comics.png"
+                            src:"img/buy-comics-digital-comics.png"
                         },
                         {
                             name:"DC MERCHANDISE",
-                            src:"../assets/buy-comics-merchandise.png"
+                            src:"img/buy-comics-merchandise.png"
                         },
                         {
                             name:"SUBSCRIPTION",
-                            src:"../assets/buy-comics-subscriptions.png"
+                            src:"img/buy-comics-subscriptions.png"
                         },
                         {
                             name:"COMIC SHOP LOCATION",
-                            src:"../assets/buy-comics-shop-location.png"
+                            src:"img/buy-comics-shop-locator.png"
                         },
                         {
-                            name:"DC POWER VISA",
-                            src:"../assets/buy-comics-power-visa.svg"
+                            name:"VISA",
+                            src:"img/buy-dc-power-visa.svg"
                         }
                     ]
                 }
@@ -55,15 +55,21 @@
                 li{
                     padding-right: 20px;
                     list-style: none;
+                    display: flex;
+                    align-items: center;
+
+                    img{
+                        height: 40%;
+                    }
 
                     a{
                         text-decoration: none;
                         color: white;
+                        margin-left: 10px;
                     }
+
                 }
-            }
-            img{
-                width: 50%;
+
             }
         }
 </style>

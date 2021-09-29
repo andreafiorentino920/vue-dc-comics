@@ -7,7 +7,7 @@
             <p>FOLLOW US</p>
             <ul>
                 <li :key="index" v-for="(img,index) in images">
-                    <img :src="img.src" :key="index" alt="">
+                    <a href="#"><img :src="img.src" :key="index" alt=""></a>
                 </li>
             </ul>
         </div>
@@ -21,23 +21,23 @@
                  images:[
                     {
                         text:"Facebook",
-                        src:"../assets/footer-facebook.png",
+                        src:"img/footer-facebook.png",
                     },
                     {
                          text:"Twitter",
-                        src:"../assets/footer-twitter.png",
+                        src:"img/footer-twitter.png",
                     },
                     {
                         text:"Youtube",
-                        src:"../assets/footer-youtube.png",
+                        src:"img/footer-youtube.png",
                     },
                      {
                         text:"Pinterest",
-                        src:"../assets/footer-pinterest.png",
+                        src:"img/footer-pinterest.png",
                     },
                     {
                         text:"Periscope",
-                        src:"../assets/footer-periscope.png",
+                        src:"img/footer-periscope.png",
                     },
                    
                 ]
@@ -71,6 +71,7 @@
                 width: 70%;
 
                 P{
+                    margin-right: 5px ;
                     color: #0282f9;
                     font-weight: bold;
                 } 
@@ -82,9 +83,10 @@
 
                     li{
                         padding: 0 15px;
+
                         a{
                             text-decoration: none;
-                            color: black;
+                            color: black;  
                         }
                     }
                 }
