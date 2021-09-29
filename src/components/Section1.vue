@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="padding">
+        asdasdaadd
     </div>
 </template>
 <script>
@@ -8,5 +9,8 @@
     }
 </script>
 <style lang="scss" scoped>
-        
+        div{
+            padding: 50px 0 ;
+            background-color: black;
+        }
 </style>

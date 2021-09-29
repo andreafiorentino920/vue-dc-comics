@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="padding">
     </div>
 </template>
 <script>

@@ -43,6 +43,8 @@ export default {
 }
 body{
   font-family: 'PT Sans Narrow', sans-serif;
-  padding-left: 150px ;
+}
+.padding{
+  padding-left: 150px;
 }
 </style>

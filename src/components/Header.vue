@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="padding">
         <div class="left">
             <img src="../img/dc-logo.png" alt="Logo">
         </div>
