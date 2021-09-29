@@ -1,6 +1,6 @@
 <template>
-    <div class="padding">
-        asdasdaadd
+    <div class>
+        <h1 class="padding">!Content goes here!</h1> 
     </div>
 </template>
 <script>
@@ -12,5 +12,8 @@
         div{
             padding: 50px 0 ;
             background-color: black;
+            h1{
+                color: white;
+            }
         }
 </style>

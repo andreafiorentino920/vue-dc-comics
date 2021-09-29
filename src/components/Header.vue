@@ -5,25 +5,71 @@
         </div>
         <div class="right">
             <ul>
-                <li>
-                    <a href="#">adsdsadas</a>
-                </li>
-                <li>
-                    <a href="#">adsdas</a>
-                </li>
-                <li>
-                    <a href="#">dsadsa</a>
-                </li>
-                <li>
-                    <a href="#">asddsa</a>
-                </li>
+                <li v-for="(link,index) in menu" :key="index"><a href="">{{link.text}}</a></li>
             </ul>
         </div>
     </div>
 </template>
 <script>
     export default{
-            name:"Header"
+            name:"Header",
+            data(){
+                return{
+                    menu:[
+                        {
+                            text:"CHARACTERS",
+                            url:"",
+                            current:false
+                        },
+                        {
+                            text:"COMICS",
+                            url:"",
+                            current:false
+                        },
+                        {
+                            text:"MOVIES",
+                            url:"",
+                            current:false
+                        },
+                        {
+                            text:"TV",
+                            url:"",
+                            current:false
+                        },
+                        {
+                            text:"GAMES",
+                            url:"",
+                            current:false
+                        },
+                        {
+                            text:"COLLECTIBLES",
+                            url:"",
+                            current:false
+                        },
+                        {
+                            text:"VIDEOS",
+                            url:"",
+                            current:false
+                        },
+                        {
+                            text:"FANS",
+                            url:"",
+                            current:false
+                        },
+                        {
+                            text:"NEWS",
+                            url:"",
+                            current:false
+                        },
+                        {
+                            text:"SHOP",
+                            url:"",
+                            current:false
+                        }
+
+                    ]
+                }
+            }
     }
 </script>
 <style lang="scss" scoped>
