@@ -1,19 +1,33 @@
 <template>
-    <div class>
-        <h1 class="padding">!Content goes here!</h1> 
-    </div>
+        <div class="container">
+            <Card :key="index" v-for="(data,index) in myJson" :info="data"/>
+        </div>
 </template>
 <script>
-    export default{
-            name:"Section1"
-    }
+      import json from "./dc-comics.json";
+      import Card from "./Card.vue"
+      export default{
+          components:{
+              Card
+          },
+          data(){
+              return{
+                  myJson: json
+              }              
+          }
+          
+      }
 </script>
 <style lang="scss" scoped>
         div{
-            padding: 50px 0 ;
             background-color: black;
-            h1{
-                color: white;
+
+            .container{
+                padding-left: 150px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
             }
-        }
+            }
 </style>

@@ -4,6 +4,7 @@
       <Header/>
     </header>
     <main>
+      <Hero/>
       <Section1/>
       <Section2/>
     </main>
@@ -16,20 +17,21 @@
 
 <script>
 import Header from './components/Header.vue'
+import Hero from './components/Hero.vue'
 import Section1 from './components/Section1.vue'
 import Section2 from './components/Section2.vue'
 import FooterTop from './components/FooterTop.vue'
 import FooterBottom from './components/FooterBottom.vue'
 
+
 export default {
   components: {
     Header,
+    Hero,
     Section1,
     Section2,
     FooterTop,
     FooterBottom
-
-
   }
 }
 </script>
