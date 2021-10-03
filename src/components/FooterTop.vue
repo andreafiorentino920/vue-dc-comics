@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-top">
         <div class="left-bar padding">
             <div class="col-left">
                 <p>DC COMICS</p>
@@ -172,7 +172,7 @@
     }
 </script>
 <style lang="scss" scoped>
-    .container{
+    .container-top{
         display: flex;
         flex-direction: row;
         background-image: url(../assets/footer-bg.jpg);
@@ -184,20 +184,22 @@
             padding-top: 25px;
             
             .col-left, .col-right, .col-center{
+                margin-right: 30px;
                 display: flex;
                 flex-direction: column;
             }
             p{
                 color: white;
-                font-size: 20px;
+                font-size: 16px;
                 margin: 15px 0 15px 0;
             }
             ul{
-                padding-right: 30px;
                 list-style: none;
+                padding: 0;
 
                 li{
                     margin-bottom: 10px;
+                    
                 }
             }
             a{

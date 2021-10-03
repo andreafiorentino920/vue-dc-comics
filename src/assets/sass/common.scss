@@ -1,0 +1,10 @@
+// Variabili
+@import "./variable.scss";
+// Font 
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+body{
+    font-family: $mainFont;
+}

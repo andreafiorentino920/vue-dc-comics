@@ -1,5 +1,5 @@
 <template>
-    <div class="padding">
+    <div class="container">
         <div class="left">
             <img src="img/dc-logo.png" alt="Logo">
         </div>
@@ -80,6 +80,11 @@
 
             .left{
                 width: 30%;
+                padding: 10px 0;
+
+                img{
+                    width: 20%;
+                }
             }
             .right{
                 display: flex;

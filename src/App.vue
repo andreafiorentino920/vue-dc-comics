@@ -4,7 +4,7 @@
       <Header/>
     </header>
     <main>
-      <Hero/>
+      <Hero :bgImage="require('./assets/jumbotron.jpg')"/>
       <Section1/>
       <Section2/>
     </main>
@@ -37,14 +37,11 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import "./assets/sass/common.scss";
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body{
-  font-family: 'PT Sans Narrow', sans-serif;
 }
 .padding{
   padding-left: 150px;

@@ -1,6 +1,6 @@
 <template>
         <div class="container-card">
-            <img class="card" :src="info.thumb" :alt="info.type">
+            <img class="cards" :src="info.thumb" :alt="info.type">
             <div class="series">
                 <p>{{info.series}}</p>
             </div>
@@ -15,9 +15,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .container-card{
-        .card{
+        width: calc(100% / 6);
+        .cards{
             width: 70%;
             height: 70%;
         }

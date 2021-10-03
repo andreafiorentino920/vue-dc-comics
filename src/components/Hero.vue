@@ -1,17 +1,18 @@
 <template>
-    <div>
-        
+    <div class="hero" :style="`background-image: url(${bgImage})`">
     </div>
 </template>
 
 <script>
 export default {
-    name:"Hero"
+    name:"Hero",
+    props:["bgImage"]
 }
 </script>
 
 <style lang="scss" scoped>
-    div{
-        background-image: url(../assets/jumbotron.jpg);
+    .hero{
+        height:400px;
+        background-size: cover;
     }
 </style>
